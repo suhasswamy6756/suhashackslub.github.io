@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="a" class="logo"><u>NMIT</u></a>
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">WORK</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="Screenshot__2_-removebg-preview.png" id="moon">
+        <h2 id="text">HACK HOUSE</h2>
+        <a href="sec" id="btn">Join the Club </a>
+        <img src="mountains_behind.png" id="mountains_behind">
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>HACKATHON</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, magni consequatur! Quae placeat eligendi ratione, aliquam rerum odio, dolor blanditiis quaerat dolorum eaque provident! Eius corrupti iste maxime neque eligendi minima similique recusandae veritatis. Maxime eius vero ratione repudiandae voluptate veritatis esse,<br> sit doloribus sint voluptas, nostrum odit nulla illum corrupti mollitia animi iure laudantium neque eum minus magni qui molestias! Esse voluptas beatae quas temporibus rem autem. Doloribus eligendi, error voluptatibus quis commodi mollitia maiores dolorum, exercitationem consequuntur atque fugit numquam obcaecati vero<br> laboriosam sequi pariatur! Eveniet cum molestias rem, impedit cupiditate temporibus optio id pariatur quibusdam autem. Molestiae, provident pariatur! Quisquam accusamus sed quibusdam! Blanditiis eius possimus totam quia praesentium quae similique voluptatibus<br> ut tempore deleniti! Sint ex sit exercitationem quas dolores ipsum accusamus at quisquam fugit, asperiores voluptate velit nihil. Accusamus maiores quaerat in doloremque necessitatibus esse. Ut nesciunt omnis et obcaecati autem ullam veritatis sit inventore distinctio, earum perspiciatis odio voluptatibus quam tempora nam quo dolores<br> explicabo possimus maiores aperiam cumque molestiae natus accusantium. Dignissimos qui quos deleniti beatae perferendis rem a odit ipsum animi id tempore voluptas<br> quasi temporibus accusamus ratione, dolor ipsam accusantium ipsa nobis officiis atque quo magni excepturi minima? Nulla itaque voluptas, repudiandae repellat sit commodi velit ducimus dolores doloribus similique quibusdam. Sunt enim facere nesciunt quia rem labore explicabo, quam iste laudantium error aperiam cum similique odio commodi <br>voluptas alias! Rerum distinctio nisi amet soluta fuga cumque voluptatum aliquam ullam excepturi nihil animi aspernatur voluptatibus laboriosam fugiat molestiae obcaecati labore inventore enim debitis, quasi dolor error! Hic odio accusantium, ducimus ipsa nostrum sed? Dolorum praesentium unde ea, in totam harum? Deserunt, animi dicta.<br> Facere ad, nesciunt iusto odio repellat laudantium, quae ullam odit inventore magnam modi laboriosam quidem, delectus rem voluptatum fugiat necessitatibus tempore. Sequi, rerum quod, eligendi qui<br> reiciendis perferendis labore hic, magni tempore quos illum aliquam quisquam. Reprehenderit voluptate ex tempore minima nobis repellendus ab nesciunt.<br> Possimus quod cumque beatae nemo. Saepe, amet deserunt. Corrupti, error neque iste sed aperiam cum, dolor mollitia cumque illo quasi quas quae tempore ipsa. Reiciendis dolores a ab voluptate reprehenderit itaque necessitatibus, ipsam accusantium odit iure at perspiciatis sunt accusamus dolorem distinctio veniam incidunt aperiam sed architecto enim alias voluptatem dignissimos minus non? Architecto voluptatem eius numquam? Nisi temporibus<br> totam in voluptatem cum aperiam expedita illum dolorem, dignissimos beatae perferendis vitae atque natus necessitatibus praesentium dolores explicabo nihil unde voluptatum distinctio tenetur recusandae.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.queryCommandIndeterm('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value *1.25 + 'px';
+            moon.style.top = value *0.75 + 'px';
+            mountains_behind.style.top = value *0.5 + 'px';
+            mountains_front.style.top = value *0 + 'px';
+            text.style.marginLeft = value *3 + 'px';
+            text.style.marginTop = value *1.5 + 'px';
+            btn.style.marginTop = value *1 + 'px';
+            header.style.top = value * 0.5 + 'px';
+           
+        })
+    </script>
+    <footer>
+        <div class="container">
+            <div  class="card">
+                <img src="sponsor logo.png" alt="sponsors">
+                <div class="intro">
+                    <h1>SPONSORSHIPS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi qui odio dolorem illo! Natus, dolores!
+                    </p>
+                </div>
+            </div>
+        
+        
+            <div  class="card">
+                <img src="supporter logo.jpg" alt="sponsors">
+                <div class="intro">
+                    <h1>SUPPORTERS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat dolores facilis, nesciunt laudantium aut impedit.</p>
+                </div>
+            </div>
+        
+        
+            <div  class="card">
+                <img src="achivement logo.jpg" alt="sponsors">
+                <div class="intro">
+                    <h1>ACHIEVEMENTS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat, adipisci dolor odit aperiam maxime.</p>
+                </div>
+        
+        </div>
+    </footer>
+</body>
+</html>
